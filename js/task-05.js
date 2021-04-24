@@ -7,7 +7,9 @@ const { input, span } = refs;
 
 input.addEventListener('input', () => ChangeTextContentOFSpan(input.value))
 
-const ChangeTextContentOFSpan = (newTextContent) =>
-  newTextContent === ""
-    ? (span.textContent = "незнакомец")
-    : (span.textContent = newTextContent);
+const ChangeTextContentOFSpan = (newTextContent) => {
+   if (newTextContent === "") {
+      span.textContent = "незнакомец"
+   }
+   span.textContent = newTextContent;
+}
