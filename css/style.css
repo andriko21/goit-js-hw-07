@@ -42,3 +42,10 @@ body {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+.div__item {
+  width: 30px;
+  height: 30px;
+  background: teal;
+  margin: 10px 0;
+}
